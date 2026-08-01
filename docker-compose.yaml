@@ -11,7 +11,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
-      my-ecommerse:
+      my-ecommerce:
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U naveen -d ecommerce_db" ]
       interval: 5s
@@ -32,10 +32,10 @@ services:
     ports:
       - "8080:8080"
     networks:
-      my-ecommerse:
+      my-ecommerce:
 
 networks:
-  my-ecommerse:
+  my-ecommerce:
 
 volumes:
   postgres_data:

@@ -18,8 +18,8 @@ A robust, industry-standard RESTful API for an e-commerce shopping cart. Built w
 
 ## 🛠️ Tech Stack
 * **Language:** Java 21
-* **Framework:** Spring Boot 3.3+
-* **Database:** PostgreSQL 15
+* **Framework:** Spring Boot 4.1.0
+* **Database:** PostgreSQL 16
 * **Security:** Spring Security + JSON Web Tokens (JWT)
 * **Testing:** JUnit 5, Mockito
 * **Documentation:** Springdoc OpenAPI (Swagger UI)
@@ -46,7 +46,11 @@ If you prefer to run the application outside of Docker, ensure you have a local 
 1. Update `src/main/resources/application.properties` with your local DB credentials.
 2. Run the application:
 ```bash
+# On Linux/macOS
 ./mvnw spring-boot:run
+
+# On Windows
+.\mvnw.cmd spring-boot:run
 ```
 
 ---
@@ -63,7 +67,11 @@ The project includes an exhaustive test suite covering all services and controll
 
 To run the tests and view the Surefire reports:
 ```bash
+# On Linux/macOS
 ./mvnw clean test
+
+# On Windows
+.\mvnw.cmd clean test
 ```
 **Current Test Coverage:** 47 Tests (0 Failures, 0 Errors)
 
